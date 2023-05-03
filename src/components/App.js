@@ -1,11 +1,9 @@
-import logo from './images/mesto_logo.svg'
+import Header from "./Header";
+
 function App() {
   return (
     <div className="page">
-
-    <header class="header">
-      <img src={logo} alt="логотип" className="header__logo"/>
-    </header>
+    <Header />
     <main className="content">
       <section className="profile">
         <div className="profile__cover">
@@ -52,7 +50,6 @@ function App() {
       </div>
     </div>
 
-
     <div className="popup popup_change-avatar">
       <div className="popup__container">
         <h3 className="popup__title">Обновить аватар</h3>
@@ -64,7 +61,6 @@ function App() {
         <button className="popup__close" type="button"></button>
       </div>
     </div>
-
 
     <div className="popup popup_image">
       <div className="popup__figure">
