@@ -1,6 +1,6 @@
-import { api } from "../utils/Api";
 import React from "react";
 import Card from "./Card";
+import { api } from "../utils/api";
 
 function Main(props) {
     const[userName, setUserName] = React.useState('');
@@ -17,7 +17,7 @@ function Main(props) {
             .catch((err) => {
                 console.log(err);
             });
-    });
+    },[]);
 
     const [cards, setCards] = React.useState([]);
 
@@ -29,7 +29,7 @@ function Main(props) {
             .catch((err) => {
                 console.log(err);
             });
-    },)
+    },[]);
 
     return (
       <main className="content">
