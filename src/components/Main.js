@@ -47,7 +47,7 @@ function Main(props) {
         </section>
         <section className="elements">
             {cards.map((card) => (
-                <Card card={card} onCardClick={props.onCardClick}/>
+                <Card key={card._id} card={card} onCardClick={props.onCardClick}/>
             ))}
         </section>
       </main>
